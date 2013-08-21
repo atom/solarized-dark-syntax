@@ -1,0 +1,145 @@
+@import "variables";
+
+.editor-colors {
+  background-color: @base03;
+  color: @base0;
+}
+
+.editor {
+  .invisible-character,
+  .indent-guide {
+    color: @base01;
+  }
+
+  .gutter {
+    background-color: @base02;
+  }
+
+  .gutter .line-number.fold,
+  .gutter .line-number:after,
+  .fold-marker:after {
+    color: @orange;
+  }
+
+  .invisible {
+    color: @base02;
+  }
+
+  .cursor {
+    border-color: @base3;
+  }
+
+  .selection .region {
+    background-color: @base01;
+    color: @base03;
+  }
+
+  .line-number.cursor-line-no-selection {
+    background-color: @base01;
+  }
+
+  // Markdown
+  .gfm {
+    .markup.italic {
+      font-style: italic;
+    }
+
+    .markup.bold {
+      font-weight: bold;
+    }
+
+    .markup.heading {
+      color: @orange;
+    }
+
+    .link {
+      color: @cyan;
+    }
+
+    .link .entity {
+      color: @violet;
+    }
+
+    .raw {
+      font-style: italic;
+    }
+
+    &.support {
+      color: @red;
+    }
+  }
+}
+
+.bracket-matcher {
+  border-bottom: 1px solid @base1;
+  margin-top: -1px;
+  opacity: .7;
+}
+
+.comment {
+  color: @base01;
+  font-style: italic;
+}
+
+.entity {
+  color: @yellow;
+}
+
+.keyword {
+  color: @green;
+}
+
+.storage.type {
+  color: @green;
+}
+
+.constant {
+  color: @yellow;
+
+  &.numeric,
+  &.boolean {
+    color: @cyan;
+  }
+}
+
+.variable {
+  color: @blue;
+}
+
+.delimiter, .brace {
+  color: @red;
+}
+
+.delimiter.period {
+  color: @green;
+}
+
+.invalid.deprecated {
+  text-decoration: underline;
+  color: @red;
+}
+
+.invalid.illegal {
+  color: @red;
+}
+
+.string {
+  color: @cyan;
+
+  .constant.character.escape {
+    color: @red;
+  }
+
+  &.regexp {
+    color: @cyan;
+
+    .source.ruby.embedded,
+    .string.regexp.arbitrary-repitition {
+      color: @red;
+    }
+  }
+
+  .variable {
+    color: @yellow;
+  }
+}
