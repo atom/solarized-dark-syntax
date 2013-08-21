@@ -1,4 +1,4 @@
 'stylesheets': [
+  'base'
   'markdown'
-  'theme'
 ]
