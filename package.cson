@@ -2,4 +2,5 @@
   'base'
   'markdown'
   'terminal'
+  'git-diff'
 ]
