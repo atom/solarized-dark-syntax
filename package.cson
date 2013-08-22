@@ -1,4 +1,5 @@
 'stylesheets': [
   'base'
   'markdown'
+  'terminal'
 ]
