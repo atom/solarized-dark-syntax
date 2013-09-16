@@ -1,7 +1,1 @@
-'stylesheets': [
-  'base'
-  'markdown'
-  'terminal'
-  'git-diff'
-  'wrap-guide'
-]
+theme: true
