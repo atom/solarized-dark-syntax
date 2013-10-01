@@ -4,8 +4,15 @@ So this provides a dark syntax using the ever popular [solarized] colors.
 
 ### Installation
 
-This theme is bundled with Atom as of version 27.
+This theme is included with Atom 27.0+ and can be activated from the
+Settings view via `cmd-,` or the Atom > Preferences... menu.
 
-Open the Settings view (`cmd-,`) and go to the Themes section to enable it.
+To install manually:
+
+```sh
+git clone https://github.com/atom/solarized-dark-syntax
+cd solarized-dark-syntax
+apm link
+```
 
 [solarized]: http://ethanschoonover.com/solarized
