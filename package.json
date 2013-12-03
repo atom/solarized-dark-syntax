@@ -3,17 +3,8 @@
   "theme": true,
   "version": "0.4.0",
   "description": "A dark syntax theme using the solarized colors",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/atom/solarized-dark-syntax.git"
-  },
-  "bugs": {
-    "url": "https://github.com/atom/solarized-dark-syntax/issues"
-  },
+  "repository": "https://github.com/atom/solarized-dark-syntax",
   "engines": {
     "atom": ">26.0"
-  },
-  "publishConfig": {
-    "registry": "https://atom.cloudant.com/registry/_design/app/_rewrite"
   }
 }
