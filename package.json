@@ -1,6 +1,6 @@
 {
   "name": "solarized-dark-syntax",
-  "theme": true,
+  "theme": "syntax",
   "version": "0.8.0",
   "description": "A dark syntax theme using the solarized colors",
   "repository": "https://github.com/atom/solarized-dark-syntax",
