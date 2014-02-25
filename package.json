@@ -6,6 +6,6 @@
   "repository": "https://github.com/atom/solarized-dark-syntax",
   "license": "MIT",
   "engines": {
-    "atom": ">26.0"
+    "atom": ">0.50.0"
   }
 }
