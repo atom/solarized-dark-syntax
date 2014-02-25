@@ -4,6 +4,7 @@
   "version": "0.9.0",
   "description": "A dark syntax theme using the solarized colors",
   "repository": "https://github.com/atom/solarized-dark-syntax",
+  "license": "MIT",
   "engines": {
     "atom": ">26.0"
   }
