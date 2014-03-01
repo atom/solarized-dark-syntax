@@ -1,18 +1,22 @@
 @import "variables";
 
 .editor-colors {
-  background-color: @base03;
-  color: @base0;
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
 }
 
 .editor {
-  .invisible-character,
+  .invisible-character{
+    color: @syntax-invisible-character-color;
+  }
+
   .indent-guide {
-    color: @base01;
+    color: @syntax-indent-guide-color;
   }
 
   .gutter {
-    background-color: @base02;
+    background-color: @syntax-gutter-background-color;
+    color: @syntax-gutter-text-color;
   }
 
   .gutter .line-number {
@@ -26,22 +30,21 @@
   }
 
   .cursor {
-    border-color: @base3;
+    border-color: @syntax-cursor-color;
   }
 
   .selection .region {
-    background-color: @base01;
-    color: @base03;
+    background-color: @syntax-selection-color;
   }
 
   .line-number.cursor-line-no-selection {
-    background-color: @base01;
+    background-color: @syntax-gutter-background-color-selected;
   }
 }
 
 .bracket-matcher {
   background-color: @base1;
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 .comment {
