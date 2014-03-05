@@ -6,7 +6,7 @@
 }
 
 .editor {
-  .invisible-character{
+  .invisible-character {
     color: @syntax-invisible-character-color;
   }
 
@@ -43,7 +43,7 @@
 }
 
 .bracket-matcher {
-  background-color: @base1;
+  background-color: fadeout(@base01, 20%);
   opacity: 0.5;
 }
 
@@ -54,10 +54,20 @@
 
 .entity {
   color: @yellow;
+
+  .punctuation {
+    color: @red
+  }
 }
 
 .keyword {
   color: @green;
+
+  &.other {
+    &.special-method {
+      color: @orange;
+    }
+  }
 }
 
 .storage.type {
@@ -68,13 +78,10 @@
   color: @yellow;
 
   &.numeric,
-  &.boolean {
+  &.boolean,
+  &.symbol, &.symbol .punctuation {
     color: @cyan;
   }
-}
-
-.variable {
-  color: @blue;
 }
 
 .delimiter, .brace {
@@ -94,10 +101,36 @@
   color: @red;
 }
 
+.method .name {
+  color: @blue;
+}
+
+.operator.assignment {
+  color: @base1;
+}
+
+.parameter {
+  color: @base1;
+}
+
+.property-name {
+  color: @green;
+}
+
+.property-value {
+  .unit {
+    color: @base0;
+  }
+}
+
 .string {
   color: @cyan;
 
   .constant.character.escape {
+    color: @red;
+  }
+
+  .punctuation.string {
     color: @red;
   }
 
@@ -108,5 +141,15 @@
     .string.regexp.arbitrary-repitition {
       color: @red;
     }
+  }
+}
+
+.variable {
+  &.instance {
+    color: @blue;
+  }
+
+  &.constant {
+    color: @yellow;
   }
 }
