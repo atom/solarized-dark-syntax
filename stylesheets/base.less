@@ -82,6 +82,14 @@
   &.symbol, &.symbol .punctuation {
     color: @cyan;
   }
+  
+  &.symbol.hashkey {
+    color: @red;
+
+    .punctuation {
+      color: @red;
+    }
+  }
 }
 
 .delimiter, .brace {
