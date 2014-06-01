@@ -1,0 +1,28 @@
+.source.c, .source.c\+\+ {
+  .meta.preprocessor {
+    color: @red;
+  }
+  .keyword.control.import {
+    color: @red;
+  }
+  .punctuation.string {
+    color: @cyan;
+  }
+  .constant {
+    color: @red;
+
+    &.numeric {
+      color: @cyan;
+    }
+  }
+  .storage {
+    color: @yellow;
+  }
+  .entity {
+    color: @base0;
+
+    &.name.function.preprocessor {
+      color: @red;
+    }
+  }
+}
