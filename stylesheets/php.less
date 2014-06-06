@@ -1,0 +1,70 @@
+.source.php {
+  .storage {
+    &.type {
+      &.class {
+        color: @yellow;
+      }
+      &.function {
+        color: @red;
+      }
+    }
+    &.modifier {
+      color: @yellow;
+    }
+  }
+  .entity {
+    &.name {
+      &.type.class {
+        color: @base0;
+      }
+      &.function {
+        color: @base0;
+      }
+    }
+    &.other {
+      color: @base0;
+    }
+  }
+  .variable {
+    color: @blue;
+  }
+  .punctuation.definition {
+    color: @base0;
+    &.comment {
+      color: @base01;
+    }
+    &.array {
+      color: @red;
+    }
+    &.string {
+      color: @base0;
+    }
+    &.variable {
+      color: @green;
+    }
+  }
+  .punctuation.section.scope {
+    color: @red;
+  }
+  .support.function {
+    &.construct {
+      color: @yellow;
+    }
+    &.array {
+      color: @green;
+    }
+  }
+  .keyword {
+    &.operator {
+      &.class {
+        color: @yellow;
+      }
+      &.assignment {
+        color: @green;
+      }
+    }
+    &.other {
+      color: @red;
+    }
+  }
+}

@@ -5,20 +5,50 @@
     &.name {
       color: @blue;
     }
+    &.other {
+      color: @blue;
+    }
   }
   .punctuation.string {
     color: @cyan;
   }
-  .keyword.operator {
-    color: @base0;
+  .keyword {
+    &.operator {
+      color: @base0;
+      &.quantifier {
+        color: @cyan;
+      }
+    }
+    &.control.import {
+      color: @red;
+    }
+    &.other {
+      color: @blue;
+    }
   }
-  .constant.other {
-    color: @red;
-  }
-  .keyword.control.import {
-    color: @red;
+  .constant {
+    &.language {
+      color: @blue;
+    }
+    &.character {
+      color: @cyan;
+    }
+    &.other {
+      color: @red;
+    }
   }
   .variable {
     color: @base0;
+  }
+  .support {
+    &.function.builtin {
+      color: @blue;
+    }
+    &.type.exception {
+      color: @yellow;
+    }
+  }
+  .storage.type.string {
+    color: @cyan;
   }
 }
