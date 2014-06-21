@@ -24,6 +24,9 @@
     }
     &.other {
       color: @blue;
+      &.python {
+        color: @green;
+      }
     }
   }
   .constant {
@@ -44,8 +47,13 @@
     &.function.builtin {
       color: @blue;
     }
-    &.type.exception {
-      color: @yellow;
+    &.type {
+      &.exception.python {
+        color: @yellow;
+      }
+      &.python {
+        color: @blue;
+      }
     }
   }
   .storage.type.string {
