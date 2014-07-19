@@ -11,7 +11,7 @@
   .constant {
     color: @red;
 
-    &.numeric {
+    &.numeric, &.language.c {
       color: @cyan;
     }
   }
@@ -22,6 +22,21 @@
     color: @base0;
 
     &.name.function.preprocessor {
+      color: @red;
+    }
+  }
+  .support.type {
+    color: @yellow;
+
+    &.posix-reserved {
+      color: @base0;
+    }
+  }
+  .variable {
+    &.other.dot-access {
+      color: @base0;
+    }
+    &.parameter.preprocessor {
       color: @red;
     }
   }
