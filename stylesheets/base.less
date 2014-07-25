@@ -42,9 +42,11 @@
   }
 }
 
+// cannot style the bracket itself
+// see: https://github.com/atom/bracket-matcher/issues/46
 .bracket-matcher {
   background-color: fadeout(@base01, 20%);
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .comment {
@@ -82,7 +84,7 @@
   &.symbol, &.symbol .punctuation {
     color: @cyan;
   }
-  
+
   &.symbol.hashkey {
     color: @red;
 
@@ -136,6 +138,7 @@
 
   .constant.character.escape {
     color: @red;
+    font-weight: bold;
   }
 
   .punctuation.string {
@@ -145,7 +148,6 @@
   &.regexp {
     color: @cyan;
 
-    .source.ruby.embedded,
     .string.regexp.arbitrary-repetition {
       color: @red;
     }
@@ -154,7 +156,7 @@
 
 .variable {
   color: @cyan;
-  
+
   &.instance {
     color: @blue;
   }
