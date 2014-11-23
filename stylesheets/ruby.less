@@ -4,7 +4,52 @@
       color: @red;
     }
   }
+  .punctuation.definition {
+    color: @syntax-text-color;
+    &.string {
+      color: @red;
+    }
+  }
+  .variable {
+    &.parameter {
+      color: @syntax-text-color;
+    }
+  }
+  .instance {
+    .punctuation.definition {
+      color: @blue;
+    }
+  }
+  .class {
+    color: @yellow;
+    &.control {
+      color: @syntax-text-color;
+    }
+  }
+  .require {
+    .keyword.other.special-method {
+      color: @orange;
+    }
+  }
+  .keyword.other {
+    color: @green;
+  }
+  .keyword.control {
+    color: @green;
+  }
+  .special-method {
+    color: @blue;
+  }
+  .symbol {
+    color: @cyan;
+    .punctuation.definition {
+      color: @cyan;
+    }
+  }
   .string.regexp {
     color: @red;
+  }
+  .support.function {
+    color: @syntax-text-color;
   }
 }

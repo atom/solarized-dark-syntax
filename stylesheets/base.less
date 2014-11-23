@@ -11,92 +11,117 @@
   }
 
   .indent-guide {
-    color: @syntax-indent-guide-color;
-  }
+      color: @syntax-indent-guide-color;
+    }
 
-  .gutter {
-    background-color: @syntax-gutter-background-color;
-    color: @syntax-gutter-text-color;
-  }
+    .gutter {
+      background-color: @syntax-gutter-background-color;
+      color: @syntax-gutter-text-color;
+    }
 
-  .gutter .line-number {
-    opacity: 1;
-  }
+    .gutter .line-number {
+      opacity: 1;
+    }
 
-  .gutter .line-number.folded,
-  .gutter .line-number:after,
-  .fold-marker:after {
-    color: @magenta;
-  }
+    .gutter .line-number.folded,
+    .gutter .line-number:after,
+    .fold-marker:after {
+      color: @magenta;
+    }
 
-  .cursor {
-    border-color: @syntax-cursor-color;
-  }
+    .cursor {
+      border-color: @syntax-cursor-color;
+    }
 
-  .selection .region {
-    background-color: @syntax-selection-color;
-  }
+    .selection .region {
+      background-color: @syntax-selection-color;
+    }
 
-  .line-number.cursor-line-no-selection {
-    background-color: @syntax-gutter-background-color-selected;
-  }
-}
-
-// cannot style the bracket itself
-// see: https://github.com/atom/bracket-matcher/issues/46
-.bracket-matcher {
-  background-color: fadeout(@base01, 20%);
-  opacity: 0.3;
-}
-
-.comment {
-  color: @base01;
-  font-style: italic;
-}
-
-.entity {
-  color: @yellow;
-
-  .punctuation {
-    color: @red
-  }
-}
-
-.keyword {
-  color: @green;
-
-  &.other {
-    &.special-method {
-      color: @orange;
+    .line-number.cursor-line-no-selection {
+      background-color: @syntax-gutter-background-color-selected;
     }
   }
-}
 
-.storage.type {
-  color: @green;
-}
-
-.constant {
-  color: @yellow;
-
-  &.numeric,
-  &.boolean,
-  &.symbol, &.symbol .punctuation {
-    color: @cyan;
+  // cannot style the bracket itself
+  // see: https://github.com/atom/bracket-matcher/issues/46
+  .bracket-matcher {
+    background-color: fadeout(@base01, 20%);
+    opacity: 0.3;
   }
 
-  &.symbol.hashkey {
-    color: @red;
+  .comment {
+    color: @base01;
+    font-style: italic;
+  }
 
-    .punctuation {
+    .entity {
+      color: @syntax-text-color;
+
+      .punctuation {
+        color: @red;
+      }
+
+      &.name {
+        color: @orange;
+      }
+      &.name.tag {
+        color: @blue;
+      }
+      &.constant {
+        color: @red;
+      }
+      &.attribute-name {
+        color: @base01;
+      }
+    }
+
+    .keyword {
+      color: @green;
+
+      &.other {
+        &.special-method {
+          color: @orange;
+        }
+      }
+    }
+
+    .storage.type {
+      color: @blue;
+    }
+
+    .storage.class.type {
+      color: @magenta;
+    }
+
+    .storage.modifier {
+      color: @blue;
+  }
+
+  .constant {
+    color: @yellow;
+
+    &.numeric,
+    &.boolean,
+    &.symbol, &.symbol .punctuation {
+      color: @cyan;
+    }
+
+    &.symbol.hashkey {
       color: @red;
+
+      .punctuation {
+        color: @red;
+      }
     }
   }
-}
 
-.delimiter, .brace {
-  color: @red;
-}
+  .delimiter, .brace {
+    color: @blue;
+  }
+
+  .delimiter, .round {
+    color: @green;
+  }
 
 .delimiter.period {
   color: @green;
@@ -120,7 +145,13 @@
 }
 
 .parameter {
-  color: @base1;
+  color: @red;
+}
+
+.punctuation {
+  &.parameters {
+    color: @green;
+  }
 }
 
 .property-name {
@@ -142,14 +173,14 @@
   }
 
   .punctuation.string {
-    color: @red;
+    color: @cyan;
   }
 
   &.regexp {
     color: @cyan;
 
     .string.regexp.arbitrary-repetition {
-      color: @red;
+      color: @cyan;
     }
   }
 }
@@ -162,6 +193,22 @@
   }
 
   &.constant {
-    color: @yellow;
+    color: @base01;
   }
+
+  &.parameter {
+    color: @red;
+  }
+}
+
+.support {
+  color: @orange;
+
+  &.class {
+    color: @red;
+  }
+}
+
+.terminator {
+  color: @green;
 }
