@@ -11,117 +11,117 @@
   }
 
   .indent-guide {
-      color: @syntax-indent-guide-color;
-    }
-
-    .gutter {
-      background-color: @syntax-gutter-background-color;
-      color: @syntax-gutter-text-color;
-    }
-
-    .gutter .line-number {
-      opacity: 1;
-    }
-
-    .gutter .line-number.folded,
-    .gutter .line-number:after,
-    .fold-marker:after {
-      color: @magenta;
-    }
-
-    .cursor {
-      border-color: @syntax-cursor-color;
-    }
-
-    .selection .region {
-      background-color: @syntax-selection-color;
-    }
-
-    .line-number.cursor-line-no-selection {
-      background-color: @syntax-gutter-background-color-selected;
-    }
+    color: @syntax-indent-guide-color;
   }
 
-  // cannot style the bracket itself
-  // see: https://github.com/atom/bracket-matcher/issues/46
-  .bracket-matcher {
-    background-color: fadeout(@base01, 20%);
-    opacity: 0.3;
+  .gutter {
+    background-color: @syntax-gutter-background-color;
+    color: @syntax-gutter-text-color;
   }
 
-  .comment {
-    color: @base01;
-    font-style: italic;
+  .gutter .line-number {
+    opacity: 1;
   }
 
-    .entity {
-      color: @syntax-text-color;
-
-      .punctuation {
-        color: @red;
-      }
-
-      &.name {
-        color: @orange;
-      }
-      &.name.tag {
-        color: @blue;
-      }
-      &.constant {
-        color: @red;
-      }
-      &.attribute-name {
-        color: @base01;
-      }
-    }
-
-    .keyword {
-      color: @green;
-
-      &.other {
-        &.special-method {
-          color: @orange;
-        }
-      }
-    }
-
-    .storage.type {
-      color: @blue;
-    }
-
-    .storage.class.type {
-      color: @magenta;
-    }
-
-    .storage.modifier {
-      color: @blue;
+  .gutter .line-number.folded,
+  .gutter .line-number:after,
+  .fold-marker:after {
+    color: @magenta;
   }
 
-  .constant {
-    color: @yellow;
-
-    &.numeric,
-    &.boolean,
-    &.symbol, &.symbol .punctuation {
-      color: @cyan;
-    }
-
-    &.symbol.hashkey {
-      color: @red;
-
-      .punctuation {
-        color: @red;
-      }
-    }
+  .cursor {
+    border-color: @syntax-cursor-color;
   }
 
-  .delimiter, .brace {
+  .selection .region {
+    background-color: @syntax-selection-color;
+  }
+
+  .line-number.cursor-line-no-selection {
+    background-color: @syntax-gutter-background-color-selected;
+  }
+}
+
+// cannot style the bracket itself
+// see: https://github.com/atom/bracket-matcher/issues/46
+.bracket-matcher {
+  background-color: fadeout(@base01, 20%);
+  opacity: 0.3;
+}
+
+.comment {
+  color: @base01;
+  font-style: italic;
+}
+
+.entity {
+  color: @syntax-text-color;
+
+  .punctuation {
+    color: @red;
+  }
+
+  &.name {
+    color: @orange;
+  }
+  &.name.tag {
     color: @blue;
   }
-
-  .delimiter, .round {
-    color: @green;
+  &.constant {
+    color: @red;
   }
+  &.attribute-name {
+    color: @base01;
+  }
+}
+
+.keyword {
+  color: @green;
+
+  &.other {
+    &.special-method {
+      color: @orange;
+    }
+  }
+}
+
+.storage.type {
+  color: @blue;
+}
+
+.storage.class.type {
+  color: @magenta;
+}
+
+.storage.modifier {
+  color: @blue;
+}
+
+.constant {
+  color: @yellow;
+
+  &.numeric,
+  &.boolean,
+  &.symbol, &.symbol .punctuation {
+    color: @cyan;
+  }
+
+  &.symbol.hashkey {
+    color: @red;
+
+    .punctuation {
+      color: @red;
+    }
+  }
+}
+
+.delimiter, .brace {
+  color: @blue;
+}
+
+.delimiter, .round {
+  color: @green;
+}
 
 .delimiter.period {
   color: @green;
