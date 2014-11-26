@@ -9,6 +9,15 @@
       color: @blue;
     }
   }
+
+  .function {
+    color: @blue;
+
+    &.magic {
+      color: @blue;
+    }
+  }
+
   .punctuation.string {
     color: @cyan;
   }
@@ -18,9 +27,12 @@
       &.quantifier {
         color: @cyan;
       }
+      &.logical {
+        color: @green;
+      }
     }
     &.control.import {
-      color: @red;
+      color: @orange;
     }
     &.other {
       color: @blue;
@@ -39,6 +51,10 @@
     &.other {
       color: @red;
     }
+  }
+
+  .entity.name.type.class {
+    color: @blue;
   }
   .variable {
     color: @base0;
@@ -59,4 +75,25 @@
   .storage.type.string {
     color: @cyan;
   }
+
+  .storage.type.class {
+    color: @green;
+    &.todo {
+      color: @magenta;
+    }
+  }
+
+  .storage.type.function {
+    color: @green;
+  }
+
+  .punctuation.definition.parameters {
+    color: @syntax-text-color;
+  }
+
+  .punctuation.separator.parameters {
+    color: @syntax-text-color;
+  }
+
+
 }

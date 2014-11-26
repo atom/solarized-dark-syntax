@@ -55,10 +55,23 @@
 }
 
 .entity {
-  color: @yellow;
+  color: @syntax-text-color;
 
   .punctuation {
-    color: @red
+    color: @red;
+  }
+
+  &.name {
+    color: @orange;
+  }
+  &.name.tag {
+    color: @blue;
+  }
+  &.constant {
+    color: @red;
+  }
+  &.attribute-name {
+    color: @base01;
   }
 }
 
@@ -73,7 +86,15 @@
 }
 
 .storage.type {
-  color: @green;
+  color: @blue;
+}
+
+.storage.class.type {
+  color: @magenta;
+}
+
+.storage.modifier {
+  color: @blue;
 }
 
 .constant {
@@ -95,7 +116,11 @@
 }
 
 .delimiter, .brace {
-  color: @red;
+  color: @blue;
+}
+
+.delimiter, .round {
+  color: @green;
 }
 
 .delimiter.period {
@@ -120,7 +145,13 @@
 }
 
 .parameter {
-  color: @base1;
+  color: @red;
+}
+
+.punctuation {
+  &.parameters {
+    color: @green;
+  }
 }
 
 .property-name {
@@ -142,14 +173,14 @@
   }
 
   .punctuation.string {
-    color: @red;
+    color: @cyan;
   }
 
   &.regexp {
     color: @cyan;
 
     .string.regexp.arbitrary-repetition {
-      color: @red;
+      color: @cyan;
     }
   }
 }
@@ -162,6 +193,22 @@
   }
 
   &.constant {
-    color: @yellow;
+    color: @base01;
   }
+
+  &.parameter {
+    color: @red;
+  }
+}
+
+.support {
+  color: @orange;
+
+  &.class {
+    color: @red;
+  }
+}
+
+.terminator {
+  color: @green;
 }
