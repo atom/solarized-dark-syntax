@@ -10,10 +10,19 @@
       color: @red;
     }
   }
+  .punctuation.definition.comment {
+    color: @syntax-comment-color;
+  }
+  .entity.inherited-class {
+    color: @yellow;
+  }
   .variable {
     &.parameter {
       color: @syntax-text-color;
     }
+  }
+  .variable.constant {
+    color: @yellow;
   }
   .instance {
     .punctuation.definition {
@@ -26,10 +35,16 @@
       color: @syntax-text-color;
     }
   }
+  .module {
+    color: @yellow;
+  }
   .require {
     .keyword.other.special-method {
       color: @orange;
     }
+  }
+  .keyword.other.special-method {
+    color: @orange;
   }
   .keyword.other {
     color: @green;
@@ -46,10 +61,19 @@
       color: @cyan;
     }
   }
+  .hashkey {
+    color: @red;
+    .punctuation.definition {
+      color: @red;
+    }
+  }
   .string.regexp {
     color: @red;
   }
   .support.function {
     color: @syntax-text-color;
+  }
+  .support.function.kernel {
+    color: @green;
   }
 }

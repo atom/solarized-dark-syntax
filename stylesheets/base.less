@@ -1,11 +1,11 @@
 @import "variables";
 
-.editor-colors {
+.editor-colors, :host {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 }
 
-.editor {
+.editor, :host {
   .invisible-character {
     color: @syntax-invisible-character-color;
   }
@@ -45,12 +45,12 @@
 // cannot style the bracket itself
 // see: https://github.com/atom/bracket-matcher/issues/46
 .bracket-matcher {
-  background-color: fadeout(@base01, 20%);
+  background-color: fadeout(@syntax-comment-color, 20%);
   opacity: 0.3;
 }
 
 .comment {
-  color: @base01;
+  color: @syntax-comment-color;
   font-style: italic;
 }
 
@@ -71,7 +71,7 @@
     color: @red;
   }
   &.attribute-name {
-    color: @base01;
+    color: @syntax-comment-color;
   }
 }
 
@@ -141,17 +141,11 @@
 }
 
 .operator.assignment {
-  color: @base1;
+  color: @syntax-emphasized-color;
 }
 
 .parameter {
   color: @red;
-}
-
-.punctuation {
-  &.parameters {
-    color: @green;
-  }
 }
 
 .property-name {
@@ -160,7 +154,7 @@
 
 .property-value {
   .unit {
-    color: @base0;
+    color: @syntax-text-color;
   }
 }
 
@@ -193,7 +187,7 @@
   }
 
   &.constant {
-    color: @base01;
+    color: @syntax-comment-color;
   }
 
   &.parameter {
