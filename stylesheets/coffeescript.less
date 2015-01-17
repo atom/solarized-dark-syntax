@@ -1,0 +1,60 @@
+.source.coffee {
+
+  .punctuation {
+    &.definition {
+      color: @syntax-text-color;
+      &.string {
+        color: @red;
+      }
+    }
+    &.terminator {
+      color: @syntax-text-color;
+    }
+  }
+  .meta {
+    &.brace {
+      color: @syntax-text-color;
+    }
+    &.delimiter {
+      color: @syntax-text-color;
+    }
+    &.function + .keyword.operator {
+      color: @blue;
+    }
+  }
+  .storage {
+    &.class {
+      color: @green;
+    }
+    &.function {
+      color: @red;
+    }
+  }
+  .variable {
+    &.assignment .keyword.operator {
+      color: @cyan;
+    }
+    &.instance + .keyword.operator {
+      color: @blue;
+    }
+    &.parameter {
+      color: @syntax-text-color;
+    }
+  }
+  .entity {
+    &.class {
+      color: @yellow;
+    }
+    &.function {
+      color: @blue;
+    }
+    &.instance {
+      color: @yellow;
+    }
+  }
+  .support {
+    &.class {
+      color: @orange;
+    }
+  }
+}
