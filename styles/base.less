@@ -63,18 +63,18 @@ atom-text-editor, :host {
     color: @orange;
   }
   &.name.tag {
-    color: @blue;
+    color: @syntax-color-tag;
   }
   &.constant {
     color: @red;
   }
   &.attribute-name {
-    color: @syntax-comment-color;
+    color: @syntax-color-attribute;
   }
 }
 
 .keyword {
-  color: @green;
+  color: @syntax-color-keyword;
 
   &.other {
     &.special-method {
@@ -96,7 +96,7 @@ atom-text-editor, :host {
 }
 
 .constant {
-  color: @yellow;
+  color: @syntax-color-constant;
 
   &.numeric,
   &.boolean,
@@ -135,7 +135,7 @@ atom-text-editor, :host {
 }
 
 .method .name {
-  color: @blue;
+  color: @syntax-color-method;
 }
 
 .operator.assignment {
@@ -147,7 +147,7 @@ atom-text-editor, :host {
 }
 
 .property-name {
-  color: @green;
+  color: @syntax-color-property;
 }
 
 .property-value {
@@ -178,7 +178,7 @@ atom-text-editor, :host {
 }
 
 .variable {
-  color: @cyan;
+  color: @syntax-color-variable;
 
   &.instance {
     color: @blue;
@@ -197,7 +197,7 @@ atom-text-editor, :host {
   color: @orange;
 
   &.class {
-    color: @red;
+    color: @syntax-color-class;
   }
 }
 
