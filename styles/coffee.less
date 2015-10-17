@@ -3,7 +3,9 @@
     color: @green;
   }
 
-  .variable {
+  .variable,
+  .entity.name.function,
+  .entity.name.class {
     color: @blue;
   }
   .variable.parameter.function {
@@ -21,14 +23,33 @@
     color: @syntax-text-color;
   }
 
-  .meta.brace.round {
-    color: @syntax-text-color;
+  .meta.brace {
+    &.round,
+    &.square {
+      color: @syntax-text-color;
+    }
   }
   .meta.delimiter {
     color: @syntax-text-color;
   }
 
+  .storage.type.class {
+    color: @green;
+  }
+
   .punctuation.terminator {
     color: @syntax-text-color;
+  }
+
+  .punctuation.section.embedded {
+    color: @red;
+  }
+
+  .constant.numeric {
+    color: @magenta;
+  }
+
+  .constant.language.boolean {
+    color: @yellow;
   }
 }
