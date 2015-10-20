@@ -1,31 +1,13 @@
-atom-text-editor, :host {
-  .gfm {
-    .markup.italic {
-      font-style: italic;
-    }
+.gfm {
+  .link .entity {
+    color: @violet;
+  }
 
-    .markup.bold {
-      font-weight: bold;
-    }
+  .raw {
+    font-style: italic;
+  }
 
-    .markup.heading {
-      color: @orange;
-    }
-
-    .link {
-      color: @cyan;
-    }
-
-    .link .entity {
-      color: @violet;
-    }
-
-    .raw {
-      font-style: italic;
-    }
-
-    &.support {
-      color: @red;
-    }
+  &.support {
+    color: @red;
   }
 }
