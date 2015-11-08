@@ -70,6 +70,14 @@
   .meta.brace.curly {
     color: @blue;
   }
+  .string.quoted.template {
+    .embedded.source {
+      color: @syntax-text-color;
+      & > .embedded.punctuation {
+        color: @red;
+      }
+    }
+  }
 }
 .source.js.jsx {
   .entity.name.tag {
