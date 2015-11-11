@@ -68,10 +68,9 @@
   }
 
   .embedded {
-    color: @syntax-emphasized-color;
+    color: darken(@syntax-emphasized-color, 15%);
 
     // so we dont confused it with normal expressions
-    opacity: 0.8;
     font-style: italic;
     .margin, .delimiters {
       font-style: normal;
