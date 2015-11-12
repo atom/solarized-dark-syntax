@@ -1,0 +1,47 @@
+.source.java {
+  .keyword.operator{
+    color:@green;
+  }
+  .keyword.import{
+    color: @orange;
+  }
+  .storage.modifier.import{
+    color: @base01;
+  }
+  .meta.class{
+    .storage.modifier{
+      color: @yellow;
+    }
+    .meta.class.identifier{
+      .entity.name.type.class{
+        color: @blue;
+      }
+    }
+  }
+  .storage.type.primitive.array{
+    color:@green;
+  }
+  .constant.numeric{
+    color:@magenta;
+  }
+  .constant.other{
+    color:@orange;
+  }
+  .storage.type{
+    color:@green;
+  }
+  .meta.method-call{
+    //@ibocon: method parameter's color
+    color:@red;
+    //@ibocon: method and variable use different hightlight
+    .meta.method{
+      color:@violet;
+    }
+    .punctuation.definition.seperator.parameter{
+      color:@green;
+    }
+  }
+  .punctuation.definition.method-parameters{
+    color:@base1;
+  }
+}
