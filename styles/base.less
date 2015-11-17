@@ -53,8 +53,9 @@ atom-text-editor, :host {
 }
 
 .string {
-  color: @cyan;
-
+  &.quoted {
+    color: @cyan;
+  }
   &.regexp {
     color: @red;
   }
@@ -94,13 +95,16 @@ atom-text-editor, :host {
     }
   }
   &.other.attribute-name {
-    color: @base1;
+    color: @base00;
   }
 }
 
 .support {
   &.function {
     color: @blue;
+    &.builtin {
+      color: @green;
+    }
   }
   &.type,
   &.class {
@@ -123,7 +127,7 @@ atom-text-editor, :host {
 
 .invalid {
   &.deprecated {
-    color: @orange;
+    color: @yellow;
     text-decoration: underline;
   }
   &.illegal {

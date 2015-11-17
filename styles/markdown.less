@@ -3,11 +3,23 @@
     color: @violet;
   }
 
+  .list {
+    &.ordered {
+      color: @green;
+    }
+    &.unordered {
+      color: @yellow;
+    }
+  }
+
   .raw {
     font-style: italic;
   }
 
   &.support {
-    color: @red;
+    color:@syntax-comment-color;
+    &.quote {
+      color: @violet;
+    }
   }
 }
