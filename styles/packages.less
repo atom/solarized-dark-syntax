@@ -1,0 +1,83 @@
+atom-text-editor,
+:host {
+
+  // Git Diff
+  .gutter {
+    .git-line-modified {
+      border-left: 2px solid @syntax-color-modified;
+      padding-left: ~"calc(0.5em - 2px)";
+      color: @syntax-gutter-text-color;
+    }
+
+    .git-line-added {
+      border-left: 2px solid @syntax-color-added;
+      padding-left: ~"calc(0.5em - 2px)";
+      color: @syntax-gutter-text-color;
+    }
+
+    .git-line-removed {
+      border-left: 2px solid @syntax-color-removed;
+      padding-left: ~"calc(0.5em - 2px)";
+      color: @syntax-gutter-text-color;
+    }
+  }
+
+  // Wrap Guide
+  .wrap-guide {
+    background-color: @syntax-wrap-guide-color;
+  }
+
+  // Linter
+  .gutter {
+    .line-number.linter-warning .icon-right:before {
+      color: @syntax-color-modified;
+    }
+    .line-number.linter-error .icon-right:before {
+      color: @syntax-color-removed;
+    }
+  }
+
+  .highlights {
+    .linter-warning .region {
+      border: 1px solid @syntax-color-modified;
+      background-image: none;
+      background-color: fade(saturate(@syntax-color-modified, 50%), 20%);
+    }
+    .linter-error .region {
+      border: 1px solid @syntax-color-removed;
+      background-image: none;
+      background-color: fade(saturate(@syntax-color-removed, 50%), 20%);
+    }
+  }
+}
+
+
+// Terminal
+
+.terminal {
+  background-color: @base03;
+
+  .color-0      { color:            @base0;  }
+  .background-0 { background-color: @base03; }
+
+  .color-1      { color:            @red; }
+  .background-1 { background-color: @red; }
+
+  .color-2      { color:            @green; }
+  .background-2 { background-color: @green; }
+
+  .color-3      { color:            @yellow; }
+  .background-3 { background-color: @yellow; }
+
+  .color-4      { color:            @blue; }
+  .background-4 { background-color: @blue; }
+
+  .color-5      { color:            @magenta; }
+  .background-5 { background-color: @magenta; }
+
+  .color-6      { color:            @cyan; }
+  .background-6 { background-color: @cyan; }
+
+  .color-7      { color:            @base3; }
+  .background-7 { background-color: @base3; }
+}
