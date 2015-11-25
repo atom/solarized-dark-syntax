@@ -6,14 +6,14 @@
 // General colors
 @syntax-text-color: @base0;
 @syntax-cursor-color: @base3;
-@syntax-selection-color: lighten(@base02, 4%);
+@syntax-selection-color: lighten(@base02, 2%);
 @syntax-selection-flash-color: @base1;
 @syntax-background-color: @base03;
 
 // Guide colors
-@syntax-wrap-guide-color: @base02;
-@syntax-indent-guide-color: fadeout(@base00, 80%);
-@syntax-invisible-character-color: fadeout(@base00, 80%);
+@syntax-wrap-guide-color: @syntax-selection-color;
+@syntax-indent-guide-color: @syntax-selection-color;
+@syntax-invisible-character-color: @syntax-selection-color;
 
 // For find and replace markers
 @syntax-result-marker-color: @cyan;

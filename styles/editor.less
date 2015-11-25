@@ -1,22 +1,15 @@
 atom-text-editor,
 :host {
-  background-color: @syntax-background-color;
   color: @syntax-text-color;
+  background-color: @syntax-background-color;
 
   .gutter {
-    background-color: @syntax-gutter-background-color;
     color: @syntax-gutter-text-color;
+    background-color: @syntax-gutter-background-color;
 
     .line-number {
-      opacity: 1;
-
-      &.cursor-line-no-selection {
+      &.cursor-line {
         background-color: @syntax-gutter-background-color-selected;
-      }
-
-      &.folded,
-      &:after {
-        color: @magenta;
       }
     }
   }
@@ -37,12 +30,12 @@ atom-text-editor,
     background-color: @syntax-selection-color;
   }
 
-  .fold-marker:after {
+  .fold-marker:after,
+  .gutter .line-number.folded {
     color: @magenta;
   }
 
   .bracket-matcher .region {
-    background-color: fadeout(@syntax-comment-color, 20%);
-    opacity: 0.3;
+    border-color: @magenta;
   }
 }
