@@ -1,59 +1,63 @@
 .source.css {
+
+  .punctuation {
+    &.separator,
+    &.terminator {
+      color: @syntax-text-color;
+    }
+    &.property-list.begin,
+    &.property-list.end {
+      color: @red;
+    }
+    &.section.function {
+      color: @cyan;
+    }
+  }
+
   .entity.name {
     color: @green;
   }
-  .punctuation.section {
+  .attribute-name.class,
+  .id {
     color: @blue;
   }
-  .punctuation.separator {
-    color: @syntax-text-color;
+  .pseudo-element,
+  .pseudo-class {
+    color: @orange;
   }
-  .punctuation.terminator {
-    color: @syntax-text-color;
-  }
-  .punctuation.definition {
-    &.entity {
-      color: @blue;
-    }
-    &.constant {
-      color: @syntax-text-color;
-    }
-  }
-  .brace {
-    color: @blue;
-  }
-  .variable {
-    color: @blue;
-  }
-  .attribute-name.class {
-    color: @blue;
-  }
-  .property-name {
-    color: @yellow;
-  }
+
   .property-value {
     color: @cyan;
   }
-  .unit {
+  .constant.numeric {
     color: @cyan;
-  }
-  .support.function {
-    color: @blue;
+    .unit {
+      color: @cyan;
+    }
   }
   .rgb-value {
     color: @cyan;
   }
-  .id {
-    color: @blue;
-  }
-  .pseudo-element {
-    color: @orange;
-  }
-  .pseudo-class {
-    color: @orange;
-
-    &.attribute-name {
-      color: @orange;
+  .support.constant {
+    color: @cyan;
+    &.media {
+      color: @red;
     }
+  }
+
+  .keyword.important {
+    color: @red;
+  }
+
+}
+
+
+// Less/Sass should have their own files,
+// but for just a single override, here should be fine too
+
+.source.less,
+.source.scss {
+  .keyword.unit {
+    color: @cyan;
   }
 }

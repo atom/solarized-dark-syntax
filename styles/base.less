@@ -52,155 +52,90 @@ atom-text-editor, :host {
   font-style: italic;
 }
 
-.entity {
-  color: @syntax-text-color;
-
-  .punctuation {
+.string {
+  &.quoted {
+    color: @cyan;
+  }
+  &.regexp {
     color: @red;
   }
-
-  &.name {
-    color: @orange;
-  }
-  &.name.tag {
-    color: @blue;
-  }
-  &.constant {
-    color: @red;
-  }
-  &.attribute-name {
-    color: @syntax-comment-color;
-  }
-}
-
-.keyword {
-  color: @green;
-
-  &.other {
-    &.special-method {
-      color: @orange;
-    }
-  }
-}
-
-.storage.type {
-  color: @blue;
-}
-
-.storage.class.type {
-  color: @magenta;
-}
-
-.storage.modifier {
-  color: @blue;
 }
 
 .constant {
-  color: @yellow;
-
-  &.numeric,
-  &.boolean,
-  &.symbol, &.symbol .punctuation {
-    color: @cyan;
+  &.numeric {
+    color: @magenta;
   }
-
-  &.symbol.hashkey {
-    color: @red;
-
-    .punctuation {
-      color: @red;
-    }
+  &.language {
+    color: @yellow;
   }
-}
-
-.delimiter, .brace {
-  color: @blue;
-}
-
-.delimiter, .round {
-  color: @green;
-}
-
-.delimiter.period {
-  color: @green;
-}
-
-.invalid.deprecated {
-  text-decoration: underline;
-  color: @red;
-}
-
-.invalid.illegal {
-  color: @red;
-}
-
-.method .name {
-  color: @blue;
-}
-
-.operator.assignment {
-  color: @syntax-emphasized-color;
-}
-
-.parameter {
-  color: @red;
-}
-
-.property-name {
-  color: @green;
-}
-
-.property-value {
-  .unit {
-    color: @syntax-text-color;
-  }
-}
-
-.string {
-  color: @cyan;
-
-  .constant.character.escape {
-    color: @red;
-    font-weight: bold;
-  }
-
-  .punctuation.string {
-    color: @cyan;
-  }
-
-  &.regexp {
-    color: @cyan;
-
-    .string.regexp.arbitrary-repetition {
-      color: @cyan;
-    }
+  &.character,
+  &.other {
+    color: @orange;
   }
 }
 
 .variable {
-  color: @cyan;
+  color: @blue;
+}
 
-  &.instance {
-    color: @blue;
+.keyword {
+  color: @green;
+}
+
+.storage {
+  color: @green;
+}
+
+.entity {
+  &.name {
+    &.class,
+    &.type,
+    &.function {
+      color: @blue;
+    }
   }
-
-  &.constant {
-    color: @syntax-comment-color;
-  }
-
-  &.parameter {
-    color: @red;
+  &.other.attribute-name {
+    color: @base00;
   }
 }
 
 .support {
-  color: @orange;
-
+  &.function {
+    color: @blue;
+    &.builtin {
+      color: @green;
+    }
+  }
+  &.type,
   &.class {
-    color: @red;
+    color: @green;
   }
 }
 
-.terminator {
-  color: @green;
+.tag {
+  &.entity.name {
+    color: @blue;
+  }
+  &.punctuation.definition {
+    &.html,
+    &.begin,
+    &.end {
+      color: @base01;
+    }
+  }
+}
+
+.invalid {
+  &.deprecated {
+    color: @yellow;
+    text-decoration: underline;
+  }
+  &.illegal {
+    color: @red;
+    text-decoration: underline;
+  }
+}
+
+.none {
+  color: @syntax-text-color;
 }
