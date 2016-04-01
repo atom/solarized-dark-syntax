@@ -25,6 +25,9 @@
   .variable.constant {
     color: @yellow;
   }
+  .constant.boolean {
+    color: @cyan;
+  }
   .instance {
     .punctuation.definition {
       color: @blue;
@@ -52,6 +55,9 @@
   }
   .keyword.control {
     color: @green;
+  }
+  .keyword.operator {
+    color: @syntax-text-color;
   }
   .special-method {
     color: @blue;
@@ -83,8 +89,20 @@
   .variable.block {
     color: @blue;
   }
+  .variable.self {
+    color: @cyan;
+  }
   .punctuation.separator {
     color: @syntax-text-color;
+  }
+  .numeric {
+    color: @cyan;
+  }
+  .punctuation.section.regexp {
+    color: @red;
+  }
+  .string.interpolated {
+    color: @cyan;
   }
   .string.interpolated {
     .embedded.line.ruby {
