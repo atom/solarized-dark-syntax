@@ -1,43 +1,43 @@
-.source.c,
-.source.cpp {
-  .meta.preprocessor {
+.syntax--source.syntax--c,
+.syntax--source.syntax--cpp {
+  .syntax--meta.syntax--preprocessor {
     color: @red;
   }
-  .keyword.control.directive {
+  .syntax--keyword.syntax--control.syntax--directive {
     color: @orange;
   }
-  .punctuation.string {
+  .syntax--punctuation.syntax--string {
     color: @cyan;
   }
-  .constant {
+  .syntax--constant {
     color: @orange;
 
-    &.numeric, &.language.c {
+    &.syntax--numeric, &.syntax--language.syntax--c {
       color: @cyan;
     }
   }
-  .storage {
+  .syntax--storage {
     color: @yellow;
   }
-  .entity {
+  .syntax--entity {
     color: @syntax-text-color;
 
-    &.name.function.preprocessor {
+    &.syntax--name.syntax--function.syntax--preprocessor {
       color: @red;
     }
   }
-  .support.type {
+  .syntax--support.syntax--type {
     color: @yellow;
 
-    &.posix-reserved {
+    &.syntax--posix-reserved {
       color: @syntax-text-color;
     }
   }
-  .variable {
-    &.other.dot-access {
+  .syntax--variable {
+    &.syntax--other.syntax--dot-access {
       color: @syntax-text-color;
     }
-    &.parameter.preprocessor {
+    &.syntax--parameter.syntax--preprocessor {
       color: @red;
     }
   }

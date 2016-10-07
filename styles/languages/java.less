@@ -1,47 +1,47 @@
-.source.java {
-  .keyword.operator{
+.syntax--source.syntax--java {
+  .syntax--keyword.syntax--operator{
     color:@green;
   }
-  .keyword.import{
+  .syntax--keyword.syntax--import{
     color: @orange;
   }
-  .storage.modifier.import{
+  .syntax--storage.syntax--modifier.syntax--import{
     color: @syntax-comment-color;
   }
-  .meta.class{
-    .storage.modifier{
+  .syntax--meta.syntax--class{
+    .syntax--storage.syntax--modifier{
       color: @yellow;
     }
-    .meta.class.identifier{
-      .entity.name.type.class{
+    .syntax--meta.syntax--class.syntax--identifier{
+      .syntax--entity.syntax--name.syntax--type.syntax--class{
         color: @blue;
       }
     }
   }
-  .storage.type.primitive.array{
+  .syntax--storage.syntax--type.syntax--primitive.syntax--array{
     color:@green;
   }
-  .constant.numeric{
+  .syntax--constant.syntax--numeric{
     color:@magenta;
   }
-  .constant.other{
+  .syntax--constant.syntax--other{
     color:@orange;
   }
-  .storage.type{
+  .syntax--storage.syntax--type{
     color:@green;
   }
-  .meta.method-call{
+  .syntax--meta.syntax--method-call{
     //@ibocon: method parameter's color
     color:@red;
     //@ibocon: method and variable use different hightlight
-    .meta.method{
+    .syntax--meta.syntax--method{
       color:@violet;
     }
-    .punctuation.definition.seperator.parameter{
+    .syntax--punctuation.syntax--definition.syntax--seperator.syntax--parameter{
       color:@green;
     }
   }
-  .punctuation.definition.method-parameters{
+  .syntax--punctuation.syntax--definition.syntax--method-parameters{
     color: @syntax-emphasized-color;
   }
 }

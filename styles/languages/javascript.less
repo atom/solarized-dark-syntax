@@ -1,89 +1,89 @@
-.source.js {
-  .constant {
+.syntax--source.syntax--js {
+  .syntax--constant {
     color: @green;
   }
 
-  .comma {
+  .syntax--comma {
     color: @syntax-text-color;
   }
 
-  .support.class {
+  .syntax--support.syntax--class {
     color: @green;
   }
 
-  .entity.name.type {
+  .syntax--entity.syntax--name.syntax--type {
     color: @yellow;
   }
-  .entity.name {
+  .syntax--entity.syntax--name {
     color: @syntax-text-color;
   }
 
-  .meta.brace {
+  .syntax--meta.syntax--brace {
     color: @syntax-text-color;
   }
 
-  .keyword {
+  .syntax--keyword {
     color: @syntax-text-color;
   }
-  .keyword.operator.new {
+  .syntax--keyword.syntax--operator.syntax--new {
     color: @green;
   }
-  .keyword.control {
+  .syntax--keyword.syntax--control {
     color: @green;
   }
-  .keyword.control.regexp {
+  .syntax--keyword.syntax--control.syntax--regexp {
     color: @cyan;
   }
 
-  .variable {
+  .syntax--variable {
     color: @blue;
   }
-  .variable.parameter {
+  .syntax--variable.syntax--parameter {
     color: @syntax-text-color;
   }
 
-  .regexp {
+  .syntax--regexp {
     color: @cyan;
   }
 
-  .support.function {
+  .syntax--support.syntax--function {
     color: @violet;
   }
-  .support.constant {
+  .syntax--support.syntax--constant {
     color: @syntax-text-color;
   }
 
-  .constant.numeric {
+  .syntax--constant.syntax--numeric {
     color: @syntax-text-color;
   }
 
-  .punctuation.terminator.statement {
+  .syntax--punctuation.syntax--terminator.syntax--statement {
     color: @syntax-text-color;
   }
 
-  .meta.delimiter.method.period {
+  .syntax--meta.syntax--delimiter.syntax--method.syntax--period {
     color: @syntax-text-color;
   }
-  .meta.brace.square {
+  .syntax--meta.syntax--brace.syntax--square {
     color: @blue;
   }
-  .meta.brace.curly {
+  .syntax--meta.syntax--brace.syntax--curly {
     color: @blue;
   }
-  .string.quoted.template {
-    .embedded.source {
+  .syntax--string.syntax--quoted.syntax--template {
+    .syntax--embedded.syntax--source {
       color: @syntax-text-color;
-      & > .embedded.punctuation {
+      & > .syntax--embedded.syntax--punctuation {
         color: @red;
       }
     }
   }
-  &.embedded .entity.name.tag {
+  &.syntax--embedded .syntax--entity.syntax--name.syntax--tag {
     color: @blue;
   }
 }
-.source.js.jsx {
-  .entity.name.tag {
+.syntax--source.syntax--js.syntax--jsx {
+  .syntax--entity.syntax--name.syntax--tag {
     color: @blue;
   }
 }
