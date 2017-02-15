@@ -23,7 +23,8 @@
     color: @yellow;
   }
   &.syntax--character,
-  &.syntax--other {
+  &.syntax--other,
+  &.syntax--support {
     color: @orange;
   }
 }
@@ -43,8 +44,9 @@
 .syntax--entity {
   &.syntax--name {
     &.syntax--class,
-    &.syntax--type,
-    &.syntax--function {
+    &.syntax--function,
+    &.syntax--section,
+    &.syntax--type {
       color: @blue;
     }
   }
