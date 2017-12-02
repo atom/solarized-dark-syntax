@@ -36,6 +36,18 @@
   }
 
   .syntax--variable {
+    color: @syntax-text-color;
+  }
+  .syntax--variable.syntax--dom {
+    color: @green;
+  }
+  .syntax--delimiter + .syntax--dom {
+    color: @syntax-text-color;
+  }
+  .syntax--name {
+    color: @syntax-text-color;
+  }
+  .syntax--variable.syntax--language {
     color: @blue;
   }
   .syntax--variable.syntax--parameter {
@@ -47,10 +59,13 @@
   }
 
   .syntax--support.syntax--function {
-    color: @violet;
+    color: @syntax-text-color;
   }
   .syntax--support.syntax--constant {
     color: @syntax-text-color;
+  }
+  .syntax--storage {
+    color: @blue;
   }
 
   .syntax--constant.syntax--numeric {
@@ -68,6 +83,10 @@
     color: @blue;
   }
   .syntax--meta.syntax--brace.syntax--curly {
+    color: @blue;
+  }
+  .syntax--definition.syntax--begin.syntax--curly,
+  .syntax--definition.syntax--end.syntax--curly, {
     color: @blue;
   }
   .syntax--string.syntax--quoted.syntax--template {
