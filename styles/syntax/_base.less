@@ -1,4 +1,3 @@
-
 .syntax--comment {
   color: @syntax-comment-color;
   font-style: italic;
@@ -34,6 +33,13 @@
 
 .syntax--keyword {
   color: @green;
+
+  &.syntax--control {
+    &.syntax--import,
+    &.syntax--from {
+      color: @red;
+    }
+  }
 }
 
 .syntax--storage {
