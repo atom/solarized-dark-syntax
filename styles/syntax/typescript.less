@@ -5,8 +5,14 @@
     }
   }
 
-  .syntax--entity.syntax--name.syntax--type {
-    color: @yellow;
+  .syntax--entity {
+    &.syntax--name.syntax--type {
+      color: @yellow;
+    }
+
+    &.syntax--inherited-class {
+      color: @yellow;
+    }
   }
 
   .syntax--support.syntax--type {
