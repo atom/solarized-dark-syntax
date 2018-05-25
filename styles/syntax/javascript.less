@@ -86,7 +86,7 @@
     color: @blue;
   }
   .syntax--definition.syntax--begin.syntax--curly,
-  .syntax--definition.syntax--end.syntax--curly, {
+  .syntax--definition.syntax--end.syntax--curly {
     color: @blue;
   }
   .syntax--string.syntax--quoted.syntax--template {
@@ -99,6 +99,12 @@
   }
   &.syntax--embedded .syntax--entity.syntax--name.syntax--tag {
     color: @blue;
+  }
+
+  .syntax--import {
+    .syntax--control {
+      color: @orange;
+    }
   }
 }
 .syntax--source.syntax--js.syntax--jsx {
